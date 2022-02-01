@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500&display=swap");
+body {
+  background: white;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+.wrapper {
+  min-width: 1100px;
+  max-width: 1440px;
+  width: 100%;
+}
+img[alt="logo"] {
+  width: 55px;
+  height: 49px;
+}
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 65%;
+  margin: 0 auto;
+  height: auto;
+  margin-bottom: 15%;
+}
+.logo-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 25%;
+}
+header div > h2 {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 500;
+}
+
+.settings-button {
+  border: none;
+  background: none;
+}
+.settings-button:hover {
+  transform: scale(1.1);
+  transition-duration: 2s;
+}
+
+.web-applications {
+  background: url(img/Rectangle\ 1.png);
+  background-size: cover;
+  height:900px 
+
+}
+.everyday-practice {
+  user-select: none;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 55%;
+  margin: 0 auto;
+}
+.everyday-practice h1 {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 74px;
+  line-height: 90px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.everyday-practice h2 {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  margin-bottom: 60px;
+}
+select[name="select-special-offer"] {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 10px;
+  text-align: center;
+  background: none;
+  width: 30%;
+  height: auto;
+}

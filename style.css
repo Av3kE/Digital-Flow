@@ -89,6 +89,7 @@ select[name="select-special-offer"] {
 .info-about-company {
   display: grid;
   grid-template-columns: repeat(2, 50%);
+  margin-bottom: 5%;
 }
 img[alt="desktop"] {
   width: 100%;
@@ -96,7 +97,7 @@ img[alt="desktop"] {
 .about-company {
   display: grid;
   grid-template-columns: 80% 20%;
-  background: #F1F1F1;
+  background: #dad6d6;
 }
 .about-company-container {
   display: flex;
@@ -105,7 +106,7 @@ img[alt="desktop"] {
   width: 80%;
   height: 65%;
   padding-top: 25%;
-  padding-left:5%;
+  padding-left: 5%;
   font-weight: 500;
   text-align: right;
 }
@@ -121,15 +122,55 @@ img[alt="desktop"] {
   font-size: 16px;
   line-height: 150%;
 }
-.scroll-items{
-  display:flex;
-  flex-direction:column;
+.scroll-items {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
 }
-.scroll-items-container{
-  height:25%;
-  display:flex;
-  flex-direction:column;
+.scroll-items-container {
+  height: 25%;
+  display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  align-items:center;
+  align-items: center;
+}
+.portfolio {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.eren-yeager {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.portfolio > h2 {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 59px;
+  text-align: center;
+  padding-bottom: 5%;
+}
+.portfolio-img-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  max-width: 60%;
+  margin-left: 11%;
+}
+.portfolio-img-container button {
+  position: absolute;
+  width: auto;
+  z-index: 9999;
+  background: none;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  padding: 14px 30px;
+}
+img[alt="example-of-website"] {
+  position: relative;
+  width: 100%;
 }

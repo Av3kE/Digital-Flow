@@ -1,13 +1,16 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap");
 body {
   background: white;
-  font-family: "Montserrat Alternates", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 .wrapper {
   min-width: 1100px;
   max-width: 1440px;
   width: 100%;
 }
+
+/*First part*/
+
 img[alt="logo"] {
   width: 55px;
   height: 49px;
@@ -30,7 +33,7 @@ header {
   width: 25%;
 }
 header div > h2 {
-  font-family: "Montserrat Alternates", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 500;
 }
 
@@ -47,6 +50,7 @@ header div > h2 {
   background: url(img/imgonline-com-ua-Resize-cvFRLopJx9UAV1j.jpg);
   background-size: cover;
 }
+
 .everyday-practice {
   user-select: none;
   height: 300px;
@@ -94,6 +98,7 @@ select[name="select-special-offer"] {
 img[alt="desktop"] {
   width: 100%;
 }
+/*second part*/
 .about-company {
   display: grid;
   grid-template-columns: 80% 20%;
@@ -134,6 +139,7 @@ img[alt="desktop"] {
   justify-content: space-between;
   align-items: center;
 }
+/*third part*/
 .portfolio {
   width: 100%;
   display: flex;
@@ -173,4 +179,51 @@ img[alt="desktop"] {
 img[alt="example-of-website"] {
   position: relative;
   width: 100%;
+}
+
+/*Перед осознанием всей проблемы, я пытался сделать всё адекватно ,или как мне казалось более менее правильно;
+оказывается с Фигмы идёт эта часть целиком картинкой, то-есть если я оставлю так , то во первых всё будет криво,
+а во вторых не будет тех линий. Поэтому вот такой вот костыль. */
+
+.our-offers {
+  background: black;
+}
+.our-offers-card-container {
+  width: 63.22%;
+  margin: 0 auto;
+  padding-top: 5%;
+}
+
+.our-offers-card-container > img {
+  width: 100%;
+}
+.advantages-container {
+  width: 100%;
+}
+.advantages {
+  z-index: 9999;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  position: absolute;
+  width: 70%;
+  margin: 30% 30% 20% 15%;
+}
+.advantages h3 {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 59px;
+}
+.advantages-card-container {
+  z-index: 9999;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  position: absolute;
+  width: 70%;
+  margin: 30% 30% 20% 15%;
+}
+img[alt="four-lamps"] {
+  width: 100%;
+  position: relative;
 }

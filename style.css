@@ -1,229 +1,189 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap");
 body {
   background: white;
-  font-family: "Montserrat", sans-serif;
-}
+  font-family: "Montserrat", sans-serif; }
+
 .wrapper {
   min-width: 1100px;
   max-width: 1440px;
-  width: 100%;
-}
+  width: 100%; }
 
 /*First part*/
-
-img[alt="logo"] {
-  width: 55px;
-  height: 49px;
-}
-header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  width: 65%;
-  margin: 0 auto;
-  height: auto;
-  margin-bottom: 10%;
-}
-.logo-container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-evenly;
-  width: 25%;
-}
-header div > h2 {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-}
-
-.settings-button {
-  border: none;
-  background: none;
-}
-.settings-button:hover {
-  transform: scale(1.1);
-  transition-duration: 2s;
-}
-
 .web-applications {
-  background: url(img/imgonline-com-ua-Resize-cvFRLopJx9UAV1j.jpg);
-  background-size: cover;
-}
+  background: url("img/imgonline-com-ua-Resize-cvFRLopJx9UAV1j.jpg");
+  background-size: cover; }
+  .web-applications header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 65%;
+    margin: 0 auto;
+    height: auto;
+    margin-bottom: 10%; }
+    .web-applications header .logo-container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-evenly;
+      width: 25%; }
+      .web-applications header .logo-container img {
+        width: 55px;
+        height: 49px; }
+      .web-applications header .logo-container h2 {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500; }
+    .web-applications header div:nth-child(2) .settings-button {
+      border: none;
+      background: none; }
+      .web-applications header div:nth-child(2) .settings-button:hover {
+        transform: scale(1.1);
+        transition-duration: 2s; }
+  .web-applications .everyday-practice {
+    user-select: none;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    margin: 0 auto;
+    padding-bottom: 210px; }
+    .web-applications .everyday-practice h1 {
+      font-family: "Montserrat", sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 74px;
+      line-height: 90px;
+      text-transform: uppercase;
+      margin-bottom: 20px; }
+    .web-applications .everyday-practice h2 {
+      font-family: "Montserrat", sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 22px;
+      margin-bottom: 60px; }
+    .web-applications .everyday-practice select[id="select-special-offer"] {
+      font-family: "Montserrat", sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 20px;
+      padding: 10px;
+      text-align: center;
+      background: none;
+      width: 30%;
+      height: auto; }
 
-.everyday-practice {
-  user-select: none;
-  height: 300px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 60%;
-  margin: 0 auto;
-  padding-bottom: 210px;
-}
-.everyday-practice h1 {
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 74px;
-  line-height: 90px;
-  text-transform: uppercase;
-  margin-bottom: 20px;
-}
-.everyday-practice h2 {
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 22px;
-  margin-bottom: 60px;
-}
-select[name="select-special-offer"] {
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 20px;
-  padding: 10px;
-  text-align: center;
-  background: none;
-  width: 30%;
-  height: auto;
-}
+/*second part*/
 .info-about-company {
   display: grid;
   grid-template-columns: repeat(2, 50%);
-  margin-bottom: 5%;
-}
-img[alt="desktop"] {
-  width: 100%;
-}
-/*second part*/
-.about-company {
-  display: grid;
-  grid-template-columns: 80% 20%;
-  background: #dad6d6;
-}
-.about-company-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 80%;
-  height: 65%;
-  padding-top: 25%;
-  padding-left: 5%;
-  font-weight: 500;
-  text-align: right;
-}
-.about-company-container h2 {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 48px;
-  line-height: 59px;
-}
-.about-company-container p {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 150%;
-}
+  margin-bottom: 5%; }
+  .info-about-company img[alt="desktop"] {
+    width: 100%; }
+  .info-about-company .about-company {
+    display: grid;
+    grid-template-columns: 80% 20%;
+    background: #dad6d6; }
+    .info-about-company .about-company .about-company-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 90%;
+      height: 65%;
+      padding-top: 25%;
+      padding-left: 5%;
+      font-weight: 500;
+      text-align: right; }
+      .info-about-company .about-company .about-company-container h2 {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 48px;
+        line-height: 59px; }
+      .info-about-company .about-company .about-company-container p {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 150%; }
+
 .scroll-items {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-}
-.scroll-items-container {
-  height: 25%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-}
+  justify-content: center; }
+  .scroll-items .scroll-items-container {
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; }
+
 /*third part*/
 .portfolio {
   width: 100%;
   display: flex;
-  flex-direction: column;
-}
-.eren-yeager {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-}
-.portfolio > h2 {
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 48px;
-  line-height: 59px;
-  text-align: center;
-  padding-bottom: 5%;
-}
-.portfolio-img-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: center;
-  max-width: 60%;
-  margin-left: 11%;
-}
-.portfolio-img-container button {
-  position: absolute;
-  width: auto;
-  z-index: 9999;
-  background: none;
-  border: 1px solid #000000;
-  box-sizing: border-box;
-  padding: 14px 30px;
-}
-img[alt="example-of-website"] {
-  position: relative;
-  width: 100%;
-}
+  flex-direction: column; }
+  .portfolio h2 {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 59px;
+    text-align: center;
+    padding-bottom: 5%; }
+  .portfolio .eren-yeager {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly; }
+    .portfolio .eren-yeager .portfolio-img-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+      max-width: 60%;
+      margin-left: 11%; }
+      .portfolio .eren-yeager .portfolio-img-container button {
+        position: absolute;
+        width: auto;
+        z-index: 9999;
+        background: none;
+        border: 1px solid #000000;
+        box-sizing: border-box;
+        padding: 14px 30px; }
+      .portfolio .eren-yeager .portfolio-img-container img {
+        position: relative;
+        width: 100%; }
 
 /*Перед осознанием всей проблемы, я пытался сделать всё адекватно ,или как мне казалось более менее правильно;
 оказывается с Фигмы идёт эта часть целиком картинкой, то-есть если я оставлю так , то во первых всё будет криво,
 а во вторых не будет тех линий. Поэтому вот такой вот костыль. */
-
 .our-offers {
-  background: black;
-}
-.our-offers-card-container {
-  width: 63.22%;
-  margin: 0 auto;
-  padding-top: 5%;
-}
+  background: black; }
+  .our-offers .our-offers-card-container {
+    width: 63.22%;
+    margin: 0 auto;
+    padding-top: 5%; }
+    .our-offers .our-offers-card-container img {
+      width: 100%; }
 
-.our-offers-card-container > img {
-  width: 100%;
-}
-.advantages-container {
-  width: 100%;
-}
-.advantages {
-  z-index: 9999;
-  display: grid;
-  grid-template-columns: repeat(2, 50%);
-  position: absolute;
-  width: 70%;
-  margin: 30% 30% 20% 15%;
-}
-.advantages h3 {
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 48px;
-  line-height: 59px;
-}
-.advantages-card-container {
-  z-index: 9999;
-  display: grid;
-  grid-template-columns: repeat(2, 50%);
-  position: absolute;
-  width: 70%;
-  margin: 30% 30% 20% 15%;
-}
-img[alt="four-lamps"] {
-  width: 100%;
-  position: relative;
-}
+@media screen and (max-width: 1314px) {
+  .info-about-company .about-company .about-company-container {
+    width: 100%; } }
+@media screen and (max-width: 1272px) {
+  .web-applications .everyday-practice h1 {
+    font-size: 70px; } }
+@media screen and (max-width: 1203px) {
+  .web-applications .everyday-practice h1 {
+    font-size: 65px; } }
+@media screen and (max-width: 1183px) {
+  .info-about-company .about-company .about-company-container p {
+    font-size: 15px; } }
+@media screen and (max-width: 1122px) {
+  .web-applications .everyday-practice h1 {
+    font-size: 60px; } }
+@media screen and (max-width: 1110px) {
+  .info-about-company .about-company .about-company-container p {
+    font-size: 14px; } }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,5 +1,15 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap");
+.portfolio .eren-yeager .portfolio-img-container .container {
+  width: 13%;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  position: absolute;
+  margin-left: 622px; }
+
 body {
   background: white;
   font-family: "Montserrat", sans-serif; }
@@ -85,7 +95,7 @@ body {
     width: 100%; }
   .info-about-company .about-company {
     display: grid;
-    grid-template-columns: 80% 20%;
+    grid-template-columns: 90% 10%;
     background: #dad6d6; }
     .info-about-company .about-company .about-company-container {
       display: flex;
@@ -133,18 +143,13 @@ body {
     text-align: center;
     padding-bottom: 5%; }
   .portfolio .eren-yeager {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly; }
+    display: grid;
+    grid-template-columns: 95% 5%; }
     .portfolio .eren-yeager .portfolio-img-container {
       display: flex;
       flex-direction: row;
-      justify-content: flex-end;
-      align-items: center;
-      max-width: 60%;
-      margin-left: 11%; }
-      .portfolio .eren-yeager .portfolio-img-container button {
-        position: absolute;
+      justify-content: center; }
+      .portfolio .eren-yeager .portfolio-img-container .container button {
         width: auto;
         z-index: 9999;
         background: none;
@@ -153,7 +158,7 @@ body {
         padding: 14px 30px; }
       .portfolio .eren-yeager .portfolio-img-container img {
         position: relative;
-        width: 100%; }
+        width: 910px; }
 
 /*Перед осознанием всей проблемы, я пытался сделать всё адекватно ,или как мне казалось более менее правильно;
 оказывается с Фигмы идёт эта часть целиком картинкой, то-есть если я оставлю так , то во первых всё будет криво,
@@ -167,9 +172,6 @@ body {
     .our-offers .our-offers-card-container img {
       width: 100%; }
 
-@media screen and (max-width: 1314px) {
-  .info-about-company .about-company .about-company-container {
-    width: 100%; } }
 @media screen and (max-width: 1272px) {
   .web-applications .everyday-practice h1 {
     font-size: 70px; } }

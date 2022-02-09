@@ -1,4 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap");
+%container {
+  width: 13%;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  position: absolute;
+  margin-left:622px;
+}
+// @mixin vogel-im-kafig {
+//   display: flex;
+//   flex-direction: row;
+//   justify-content: flex-end;
+// }
 body {
   background: white;
   font-family: "Montserrat", sans-serif;
@@ -105,7 +120,7 @@ body {
   }
   .about-company {
     display: grid;
-    grid-template-columns: 80% 20%;
+    grid-template-columns: 90% 10%;
     background: #dad6d6;
 
     .about-company-container {
@@ -170,31 +185,30 @@ body {
     padding-bottom: 5%;
   }
   .eren-yeager {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: 95% 5%;
 
     .portfolio-img-container {
       display: flex;
       flex-direction: row;
-      justify-content: flex-end;
-      align-items: center;
-      max-width: 60%;
-      margin-left: 11%;
+      justify-content: center;
+      // .vogel-im-kafig {
+      //   @include vogel-im-kafig;
+      .container {
+        @extend %container;
 
-      button {
-        position: absolute;
-        width: auto;
-        z-index: 9999;
-        background: none;
-        border: 1px solid #000000;
-        box-sizing: border-box;
-        padding: 14px 30px;
+        button {
+          width: auto;
+          z-index: 9999;
+          background: none;
+          border: 1px solid #000000;
+          box-sizing: border-box;
+          padding: 14px 30px;
+        }
       }
-
       img {
         position: relative;
-        width: 100%;
+        width: 910px;
       }
     }
   }
@@ -252,39 +266,28 @@ body {
 //     }
 //   }
 // }
-@media screen and(max-width:1314px) {
-  .info-about-company .about-company .about-company-container  {
-    width:100%;
-    
+@media screen and(max-width:1272px) {
+  .web-applications .everyday-practice h1 {
+    font-size: 70px;
   }
 }
-@media screen and(max-width:1272px){
-  .web-applications .everyday-practice h1{
-    font-size:70px;
+@media screen and(max-width:1203px) {
+  .web-applications .everyday-practice h1 {
+    font-size: 65px;
   }
-
-}
-@media screen and(max-width:1203px){
-  .web-applications .everyday-practice h1{
-    font-size:65px;
-  }
-
 }
 @media screen and(max-width:1183px) {
   .info-about-company .about-company .about-company-container p {
-  font-size:15px;
-    
+    font-size: 15px;
   }
 }
-@media screen and(max-width:1122px){
-  .web-applications .everyday-practice h1{
-    font-size:60px;
+@media screen and(max-width:1122px) {
+  .web-applications .everyday-practice h1 {
+    font-size: 60px;
   }
-
 }
 @media screen and(max-width:1110px) {
-  .info-about-company .about-company .about-company-container p{
-   font-size:14px;
-   
+  .info-about-company .about-company .about-company-container p {
+    font-size: 14px;
   }
 }

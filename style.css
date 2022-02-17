@@ -172,6 +172,46 @@ body {
     .our-offers .our-offers-card-container img {
       width: 100%; }
 
+.advantages-container {
+  min-width: 100%;
+  height: 675px;
+  background: url("img/imgonline-com-ua-Resize-OHnuL0YTZKxfnIM7.png"); }
+  .advantages-container .advantages {
+    width: 100%;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .advantages-container .advantages .container {
+      width: 70%; }
+      .advantages-container .advantages .container h3 {
+        font-family: "Montserrat", sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 48px;
+        text-align: left;
+        line-height: 59px;
+        margin-bottom: 5%; }
+    .advantages-container .advantages .advantages-card-container {
+      display: grid;
+      grid-template-columns: repeat(2, 50%);
+      row-gap: 60px;
+      column-gap: 110px;
+      width: 70%; }
+      .advantages-container .advantages .advantages-card-container div p {
+        font-weight: 500; }
+
+.Mikasa {
+  width: 100%;
+  display: flex;
+  flex-direction: row; }
+  .Mikasa article {
+    width: 50%;
+    height: 940px; }
+    .Mikasa article:first-child {
+      background: url("img/Rectangle 4.png"); }
+
 @media screen and (max-width: 1272px) {
   .web-applications .everyday-practice h1 {
     font-size: 70px; } }

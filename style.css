@@ -211,6 +211,66 @@ body {
     height: 940px; }
     .Mikasa article:first-child {
       background: url("img/Rectangle 4.png"); }
+      .Mikasa article:first-child form .form-container {
+        width: 53.02%;
+        height: 594px;
+        margin: 30% 7.6% 30% 36.77%; }
+        .Mikasa article:first-child form .form-container h3 {
+          font-family: "Montserrat", sans-serif;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 48px;
+          color: white;
+          padding-bottom: 30%; }
+        .Mikasa article:first-child form .form-container span {
+          font-family: "Montserrat";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 16px;
+          color: white; }
+        .Mikasa article:first-child form .form-container label {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+          height: 70px;
+          padding-bottom: 15%; }
+          .Mikasa article:first-child form .form-container label textarea {
+            resize: none;
+            background: none;
+            border: none;
+            border-bottom: 1px solid #ffffff;
+            color: white;
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px; }
+            .Mikasa article:first-child form .form-container label textarea:focus {
+              outline: none; }
+          .Mikasa article:first-child form .form-container label input {
+            background: none;
+            border: none;
+            border-bottom: 1px solid #ffffff;
+            color: white;
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px; }
+            .Mikasa article:first-child form .form-container label input:focus {
+              outline: none; }
+        .Mikasa article:first-child form .form-container input[name="submit"] {
+          background: none;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          padding: 14px;
+          width: 50%;
+          color: white;
+          border: 1px solid #ffffff;
+          box-sizing: border-box; }
+          .Mikasa article:first-child form .form-container input[name="submit"]:hover {
+            transform: scale(1.1);
+            transition-duration: 1s; }
 
 @media screen and (max-width: 1272px) {
   .web-applications .everyday-practice h1 {

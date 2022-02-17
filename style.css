@@ -15,7 +15,7 @@ body {
   font-family: "Montserrat", sans-serif; }
 
 .wrapper {
-  min-width: 1100px;
+  width: 1100px;
   max-width: 1440px;
   width: 100%; }
 
@@ -83,7 +83,6 @@ body {
       padding: 10px;
       text-align: center;
       background: none;
-      width: 30%;
       height: auto; }
 
 /*second part*/
@@ -272,18 +271,45 @@ body {
             transform: scale(1.1);
             transition-duration: 1s; }
 
+@media screen and (max-width: 938px) {
+  .web-applications header .logo-container h2 {
+    font-size: 12px; } }
+@media screen and (max-width: 797px) {
+  .web-applications header .logo-container {
+    width: 50%;
+    justify-content: flex-start; } }
+@media screen and (max-width: 550px) {
+  .web-applications header {
+    width: 90%;
+    margin: 0 3% 10% 3%; } }
+@media screen and (max-width: 407px) {
+  .web-applications header .logo-container {
+    width: 70%;
+    justify-content: flex-start; } }
 @media screen and (max-width: 1272px) {
   .web-applications .everyday-practice h1 {
     font-size: 70px; } }
 @media screen and (max-width: 1203px) {
   .web-applications .everyday-practice h1 {
     font-size: 65px; } }
+@media screen and (max-width: 1139px) {
+  .web-applications .everyday-practice h1 {
+    font-size: 50px; }
+
+  .web-applications .everyday-practice {
+    width: 100%; } }
+@media screen and (max-width: 540px) {
+  .web-applications .everyday-practice h1 {
+    font-size: 35px; } }
+@media screen and (max-width: 380px) {
+  .web-applications .everyday-practice h1 {
+    font-size: 25px; } }
+@media screen and (max-width: 277px) {
+  .web-applications .everyday-practice h1 {
+    font-size: 20px; } }
 @media screen and (max-width: 1183px) {
   .info-about-company .about-company .about-company-container p {
     font-size: 15px; } }
-@media screen and (max-width: 1122px) {
-  .web-applications .everyday-practice h1 {
-    font-size: 60px; } }
 @media screen and (max-width: 1110px) {
   .info-about-company .about-company .about-company-container p {
     font-size: 14px; } }

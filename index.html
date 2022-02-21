@@ -41,7 +41,9 @@
         </div>
       </section>
       <section class="info-about-company">
-        <img src="img/Rectangle 2.png" alt="desktop" />
+        <div class="img-container">
+          <img src="img/Rectangle 2.png" alt="desktop" />
+        </div>
         <article class="about-company">
           <div class="about-company-container">
             <h2>О компании</h2>
@@ -80,7 +82,7 @@
             <img src="img/f_9936163de18b3599 1.png" alt="example-of-website" />
           </div>
           <div class="scroll-items">
-            <div class="scroll-items-container">
+            <div class="scroll-items-container another-height">
               <i class="fas fa-circle"></i>
               <i class="far fa-circle"></i>
               <i class="fas fa-circle"></i>
@@ -139,17 +141,33 @@
           <form method="get">
             <div class="form-container">
               <h3>Заявка</h3>
+
               <label
                 ><span>Ваше имя</span
-                ><input type="text" name="your-name" id="your-name" checked
+                ><input
+                  type="text"
+                  name="your-name"
+                  id="your-name"
+                  value="Mikasa Ackerman"
+                  checked
               /></label>
               <label
                 ><span>Ваше Email</span
-                ><input type="email" name="your-email" id="your-email" checked
+                ><input
+                  type="email"
+                  name="your-email"
+                  id="your-email"
+                  value="konohanogakure@gmail.com"
+                  checked
               /></label>
               <label
                 ><span>Message</span
-                ><textarea name="your-message" id="your-message" rows="6"></textarea></label>
+                ><textarea
+                  name="your-message"
+                  id="your-message"
+                  rows="6"
+                ></textarea>
+              </label>
               <input
                 type="submit"
                 name="submit"
@@ -159,7 +177,6 @@
             </div>
           </form>
         </article>
-        <article></article>
       </section>
     </div>
   </body>

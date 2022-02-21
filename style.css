@@ -1,7 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap");
 .portfolio .eren-yeager .portfolio-img-container .container {
-  width: 13%;
   height: 30%;
   display: flex;
   flex-direction: column;
@@ -90,8 +89,11 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 50%);
   margin-bottom: 5%; }
-  .info-about-company img[alt="desktop"] {
-    width: 100%; }
+  .info-about-company .img-container {
+    min-width: 100%; }
+    .info-about-company .img-container img[alt="desktop"] {
+      width: 100%;
+      height: 100%; }
   .info-about-company .about-company {
     display: grid;
     grid-template-columns: 90% 10%;
@@ -127,6 +129,8 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center; }
+  .scroll-items .another-height {
+    height: 50%; }
 
 /*third part*/
 .portfolio {
@@ -195,85 +199,85 @@ body {
     .advantages-container .advantages .advantages-card-container {
       display: grid;
       grid-template-columns: repeat(2, 50%);
-      row-gap: 60px;
-      column-gap: 110px;
+      row-gap: 20%;
+      column-gap: 15%;
       width: 70%; }
       .advantages-container .advantages .advantages-card-container div p {
         font-weight: 500; }
 
 .Mikasa {
-  width: 100%;
-  display: flex;
-  flex-direction: row; }
+  width: 100%; }
   .Mikasa article {
-    width: 50%;
+    width: 100%;
     height: 940px; }
     .Mikasa article:first-child {
       background: url("img/Rectangle 4.png"); }
-      .Mikasa article:first-child form .form-container {
-        width: 53.02%;
-        height: 594px;
-        margin: 30% 7.6% 30% 36.77%; }
-        .Mikasa article:first-child form .form-container h3 {
-          font-family: "Montserrat", sans-serif;
-          font-style: normal;
-          font-weight: 500;
-          font-size: 48px;
-          color: white;
-          padding-bottom: 30%; }
-        .Mikasa article:first-child form .form-container span {
-          font-family: "Montserrat";
-          font-style: normal;
-          font-weight: 500;
-          font-size: 16px;
-          color: white; }
-        .Mikasa article:first-child form .form-container label {
-          display: flex;
-          flex-direction: column;
-          justify-content: space-evenly;
-          height: 70px;
-          padding-bottom: 15%; }
-          .Mikasa article:first-child form .form-container label textarea {
-            resize: none;
-            background: none;
-            border: none;
-            border-bottom: 1px solid #ffffff;
+      .Mikasa article:first-child form {
+        padding: 10% 15%;
+        height: 594px; }
+        .Mikasa article:first-child form .form-container {
+          height: 594px;
+          margin: 0 auto; }
+          .Mikasa article:first-child form .form-container h3 {
+            font-family: "Montserrat", sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 48px;
             color: white;
+            padding-bottom: 2%; }
+          .Mikasa article:first-child form .form-container span {
             font-family: "Montserrat";
             font-style: normal;
             font-weight: 500;
-            font-size: 16px; }
-            .Mikasa article:first-child form .form-container label textarea:focus {
-              outline: none; }
-          .Mikasa article:first-child form .form-container label input {
+            font-size: 16px;
+            color: white; }
+          .Mikasa article:first-child form .form-container label {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            height: 70px;
+            padding-bottom: 2%;
+            width: 30%; }
+            .Mikasa article:first-child form .form-container label textarea {
+              resize: none;
+              background: none;
+              border: none;
+              border-bottom: 1px solid #ffffff;
+              color: white;
+              font-family: "Montserrat";
+              font-style: normal;
+              font-weight: 500;
+              font-size: 16px; }
+              .Mikasa article:first-child form .form-container label textarea:focus {
+                outline: none; }
+            .Mikasa article:first-child form .form-container label input {
+              background: none;
+              border: none;
+              border-bottom: 1px solid #ffffff;
+              color: white;
+              font-family: "Montserrat";
+              font-style: normal;
+              font-weight: 500;
+              font-size: 16px; }
+              .Mikasa article:first-child form .form-container label input:focus {
+                outline: none; }
+          .Mikasa article:first-child form .form-container input[name="submit"] {
             background: none;
-            border: none;
-            border-bottom: 1px solid #ffffff;
+            height: 50px;
+            min-width: 10%;
             color: white;
-            font-family: "Montserrat";
-            font-style: normal;
-            font-weight: 500;
-            font-size: 16px; }
-            .Mikasa article:first-child form .form-container label input:focus {
-              outline: none; }
-        .Mikasa article:first-child form .form-container input[name="submit"] {
-          background: none;
-          display: flex;
-          flex-direction: row;
-          justify-content: space-between;
-          align-items: center;
-          padding: 14px;
-          width: 50%;
-          color: white;
-          border: 1px solid #ffffff;
-          box-sizing: border-box; }
-          .Mikasa article:first-child form .form-container input[name="submit"]:hover {
-            transform: scale(1.1);
-            transition-duration: 1s; }
+            border: 1px solid #ffffff;
+            box-sizing: border-box; }
+            .Mikasa article:first-child form .form-container input[name="submit"]:hover {
+              transform: scale(1.1);
+              transition-duration: 1s; }
 
 @media screen and (max-width: 938px) {
   .web-applications header .logo-container h2 {
-    font-size: 12px; } }
+    font-size: 12px; }
+
+  .portfolio .eren-yeager .portfolio-img-container .container {
+    display: none; } }
 @media screen and (max-width: 797px) {
   .web-applications header .logo-container {
     width: 50%;
@@ -313,5 +317,63 @@ body {
 @media screen and (max-width: 1110px) {
   .info-about-company .about-company .about-company-container p {
     font-size: 14px; } }
+@media screen and (max-width: 253px) {
+  .web-applications .everyday-practice h2 {
+    font-size: 15px; } }
+@media screen and (max-width: 890px) {
+  .info-about-company {
+    display: flex;
+    flex-direction: column; }
+
+  .info-about-company .about-company {
+    height: 602px; }
+
+  .info-about-company .about-company .about-company-container {
+    padding: 0;
+    padding-top: 10%; } }
+@media screen and (max-width: 944px) {
+  .portfolio .eren-yeager .portfolio-img-container img {
+    width: 66.52%; } }
+@media screen and (max-width: 944px) {
+  .scroll-items .another-height {
+    height: 100%;
+    justify-content: space-evenly; } }
+@media screen and (max-width: 401px) {
+  .info-about-company .about-company .about-company-container h2 {
+    font-size: 36px; }
+
+  .info-about-company .about-company .about-company-container {
+    height: 80%; } }
+@media screen and (max-width: 401px) {
+  .portfolio h2 {
+    font-size: 35px; } }
+@media screen and (max-width: 781px) {
+  .advantages-container .advantages .container h3 {
+    font-size: 40px; } }
+@media screen and (max-width: 747px) {
+  .advantages-container .advantages .advantages-card-container div p {
+    font-size: 12px; } }
+@media screen and (max-width: 662px) {
+  .advantages-container .advantages .container h3 {
+    font-size: 35px; } }
+@media screen and (max-width: 351px) {
+  .advantages-container .advantages .container h3 {
+    font-size: 30px; } }
+@media screen and (max-width: 407px) {
+  .advantages-container .advantages .advantages-card-container {
+    display: flex;
+    flex-direction: column; }
+
+  .advantages-container .advantages .advantages-card-container div {
+    padding-bottom: 5%; } }
+@media screen and (max-width: 842px) {
+  .Mikasa article:first-child form .form-container label {
+    width: 50%; } }
+@media screen and (max-width: 505px) {
+  .Mikasa article:first-child form .form-container label {
+    width: 70%; } }
+@media screen and (max-width: 370px) {
+  .Mikasa article:first-child form .form-container label {
+    width: 100%; } }
 
 /*# sourceMappingURL=style.css.map */
